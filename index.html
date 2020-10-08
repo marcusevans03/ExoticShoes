@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #FFF733;
+}
+
+/* Header/Blog Title */
+.header {
+  border-radius: 25px;
+  padding: 30px;
+  text-align: center;
+  background: #FF94D8;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #33BAFF;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #FFF733;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #7CFA54 ;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  border-radius: 25px;
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #FF94D8;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  border-radius: 25px;
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  border-radius: 25px;
+  padding: 20px;
+  text-align: center;
+  background: #33BAFF;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>New Releases</h1>
+  <p>Resize the browser window to see the effect.</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Buy Now</a>
+  <a href="#">Enter Raffle</a>
+  <a href="#">Coming Soon</a>
+  <a href="#" style="float:right">Link</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>OFF - WHITE</h2>
+      <h5>Virgil Abloh Milan-based label Off-White Shoes, Jan 13, 2016</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+       <img src= "Images/img36.jpg" alt="Logo." class= "picture" width="500" >
+      <p>About Off White..</p>
+      <p>Off-White is an Italian luxury fashion label founded by American designer Virgil Abloh The company was incorporated in Milan in 2012. The label has collaborated with Nike, Levi, Jimmy Choo, IKEA and Evian</p>
+    </div>
+    <div class="card">
+      <h2>Adidas Brands</h2>
+      <h5>,2017-10-30*02:47:33:899</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Adidas Shoe Desription..</p>
+      <p>Shop the latest Adidas Yeezy Sneakers, including the Yeezy Boost 350 V2 'Carbon' and more at Flight Club, the most trusted name in authentic sneakers</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Us</h2>
+      <div class="Images" style="height:100px;"></div>
+       <img src= "Images/lyricallemonade.png" alt="Logo." class= "picture" width="150" >
+      <p>Established in Chicago over fifteen years ago, **** revolutionized sneaker retail as the original consignment store for exotic shoes...</p>
+    </div>
+    <div class="card">
+      <h3>Popular Shoes</h3>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>@ExoticKick$</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
